@@ -17,9 +17,10 @@ function registerUser(){
 }
 document.addEventListener("DOMContentLoaded", function () {
     let username = localStorage.getItem("username");
-    if (!username) {
-        window.location.href = "index.html"; // Redirect if no user
-    } else {
+    if (!username && window.location.pathname !== "/index.html") {
+    window.location.href = "index.html";
+    }
+    else {
         document.getElementById("userNameDisplay").innerText = `Welcome, ${username}`;
     }
 
