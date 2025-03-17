@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: lightblue;
+    background-image: url('/image/new.jpg');
+    /* Replace with your image path */
+    background-size:cover;
+    /* Ensures image covers the entire screen */
+    background-position:center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents repeating */
+    background-attachment: fixed;
+}
+
+.inp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+h2 {
+    font-size: 30px;
+    /* font-style: italic; */
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font: 1em sans-serif;
+    font-weight: bold;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: #3b3a3a;
+}
+
+.quiz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    margin: 5px;
+}
+
+.quiz-container {
+    text-align: center;
+    width: 400px;
+}
+
+.question-box {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+.question {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.options {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.option {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+    color: #222;
+}
+
+.option:hover {
+    background-color: #ddd;
+}
+
+/* ✅ Correct Answer - Green */
+.correct {
+    background-color: green !important;
+    color: white;
+}
+
+/* ❌ Wrong Answer - Red */
+.wrong {
+    background-color: red !important;
+    color: white;
+}
+
+#score-board {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.correct {
+    background-color: green;
+    color: white;
+}
+
+.wrong {
+    background-color: red;
+    color: white;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="quiz.png" type="image/png">
+    <title>Quiz Time</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="one">
+        <div class="quiz">
+            <!-- <h1>Quiz Time</h1> -->
+            <h1 id="userNameDisplay"></h1>
+        </div>
+        
+        <div id="quiz-container">
+            <!-- Your quiz UI will go here -->
+            <div class="question-box">
+                <div class="question" id="question">Loading question...</div>
+                <div class="options" id="options"></div>
+            </div>
+        </div>
+
+        <div id="score-board">
+            <h3 id="correct-count">✅ Correct: 0</h3>
+            <h3 id="wrong-count">❌ Wrong: 0</h3>
+        </div>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
